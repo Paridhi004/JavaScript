@@ -12,6 +12,7 @@ console.log(amountId);
 amountEmail = "Rastogi156@gmail.com"
 amountPassword = "34567"
 amountcity = "Jaipur"
+
 console.table([amountEmail , amountPassword , amountcity  , amountState])
 
 
