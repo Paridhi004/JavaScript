@@ -108,6 +108,8 @@ let str3 = str1 + str2
 
 console.log(+true);// -> 1 (converted to number)
 console.log(+""); //-> 0
+//Let expr be the result of evaluating UnaryExpression.
+//Return ToNumber(GetValue(expr)).
 
 
 let nums1, nums2, nums3
