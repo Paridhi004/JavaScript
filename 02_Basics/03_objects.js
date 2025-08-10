@@ -42,7 +42,7 @@ const JsUser2 = {
       location:"Jaipur",
       email:"hitesh@google.com",
       isLoggedIn: false,
-      lastLoginday: ["Monday" , "Saturday"]
+      lastLoginday: ["Monday" , "Saturday"] // creating array inside object .
 }
 
 console.log(JsUser2[mySym]); // correct way to access symbol.
@@ -77,10 +77,9 @@ JsUser.greeting = function(){
 
 console.log(JsUser.greeting); // Output is : [Function (anonymous)] -> This nmeans the function
 // has not executed , we've recieved only its reference.
-
 console.log(JsUser.greeting()); // this actually executes the function
 
 JsUser.greeting2 = function(){
-    console.log(`Hello JS User , ${this.name}`);
+    console.log(`Hello JS User , ${this.name}`); // refereing objects's property using this
 }
 console.log(JsUser.greeting2());
