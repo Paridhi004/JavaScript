@@ -36,7 +36,7 @@ console.log(result);
 
 
 function loginUserMessage(username){
-    if(username === undefined){
+    if(username === undefined){ // or !username => !undefined
         console.log("Please enter a username!");
         return
     }
@@ -46,4 +46,11 @@ console.log(loginUserMessage("Paridhi")); // Paridhi just logged in
 console.log(loginUserMessage("")); // just logged in
 console.log(loginUserMessage()); // undefined just logged in -> for this check the condition.
 
-
+// concept of default value:
+function loginUserMessage(username = "Sam"){ // default value used if no value entered by user during function call.
+    if(username === undefined){ 
+        console.log("Please enter a username!");
+        return
+    }
+    return `${username} just logged in `
+}
